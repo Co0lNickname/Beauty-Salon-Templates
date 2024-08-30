@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+}
+.label-block {
+    background-color: #5C8692;
+    justify-content: center;
+}
+.label-block, .label-row {
+    display: flex;
+}
+.label-row {
+    padding: 0.5% 0 0.5% 0;
+}
+.label {
+    font-weight: normal;
+    font-family: "Playfair Display", sans-serif;
+    color: #FFFFFF;
+}

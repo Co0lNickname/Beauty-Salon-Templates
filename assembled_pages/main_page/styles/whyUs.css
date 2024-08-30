@@ -1,0 +1,122 @@
+@media (min-width: 768px) {
+    .why-us-box {
+        justify-content: space-between;
+    }
+    .why-us-text {
+        max-width: 595px;
+    }
+    .why-us-question, .why-us-headline, .why-us-description {
+        padding-bottom: 3%;
+    }
+    .why-us-headline {
+        max-width: 480px;
+    }
+    .why-us-advantages {
+        justify-content: space-between;
+    }
+    .advantage-box {
+        max-width: 188px;
+        max-height: 178px;
+    }
+    .advantage-box img {
+        width: auto;
+        height: 4vw;
+    }
+    .advantage-description {
+        font-size: 1.5vw;
+    }
+    .foreground img, .background img {
+        max-width: 500px;
+        max-height: 576px;
+        width: 38vw;
+        height: auto;
+    }
+}
+@media (min-width: 471px) and (max-width: 768px) {
+    .why-us-image {
+        display: none;
+    }
+    .why-us-question, .why-us-headline, .why-us-description {
+        padding-bottom: 2%;
+        font-size: 90%;
+    }
+    .why-us-advantages {
+        justify-content: space-between;
+    }
+    .advantage-box {
+        min-width: 112px;
+        min-height: 110px;
+    }
+    .advantage-box img {
+        width: auto;
+        height: 7vw;
+    }
+    .advantage-description {
+        font-size: 2vw;
+    }
+}
+@media (max-width: 470px) {
+    .why-us-image {
+        display: none;
+    }
+    .why-us-question, .why-us-headline, .why-us-description {
+        padding-bottom: 2%;
+        font-size: 80%;
+    }
+    .why-us-advantages {
+        flex-direction: column;
+        align-items: center;
+    }
+    .advantage-box {
+        min-width: 132px;
+        min-height: 130px;
+        margin: 2%;
+    }
+    .advantage-box img {
+        width: auto;
+        height: 56px;
+    }
+    .advantage-description {
+        font-size: 0.8em;
+    }
+}
+* {
+    margin: 0;
+}
+.why-us-box {
+    background-color: #EBF3F5;
+    padding: 5% 8.33333333333% 5% 8.33333333333%;
+    align-items: center;
+}
+.why-us-box, .why-us-text, .why-us-advantages {
+    display: flex;
+}
+.why-us-headline, .advantage-description {
+    font-family: 'Playfair Display', sans-serif;
+}
+.why-us-question, .why-us-description {
+    font-family: 'Manrope', sans-serif;
+    color: #555555;
+}
+.why-us-headline h1 {
+    font-weight: normal;
+}
+.why-us-text {
+    flex-direction: column;
+}
+.advantage-box {
+    background-color: #FFFFFF;
+    border: solid black 2px;
+    align-content: center;
+    text-align: center;
+    width: 12.5vw;
+    height: 11.5vw;
+}
+.foreground {
+    position: absolute;
+    bottom: 8%;
+    left: 10%;
+}
+.background {
+    position: relative;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+      @media (max-width: 991px) {
+          .preview-text {
+              height: 70%;
+          }
+          .image-frame {
+              width: 88vh;
+              height: 90vh;
+          }
+          .image-frame img {
+              width: 88vh;
+              height: 90vh;
+          }
+      }
+      @media (min-width: 768px) {
+          .preview-box {
+              flex-direction: row;
+              justify-content: space-between;
+          }
+          .preview-text {
+              flex-direction: column;
+              max-width: 492px;
+              max-height: 437px;
+          }
+          .shadow-box {
+              justify-content: space-between;
+              width: 52%;
+              font-size: 80%;
+          }
+          .shadow-image {
+              max-width: 25px;
+          }
+          .headline {
+              width: 60%;
+          }
+          .comment {
+              width: 75%;
+          }
+          .text-spacing {
+              padding-top: 5%;
+          }
+          .preview-text {
+              justify-content: space-between;
+          }
+      }
+      @media (min-width: 431px) and (max-width: 768px) {
+          .preview-text {
+              flex-direction: column;
+              width: 100%;
+          }
+          .headline {
+              font-size: 90%;
+          }
+          .shadow-box {
+              width: 53%;
+              justify-content: space-between;
+          }
+          .text-spacing {
+              padding-top: 2%;
+          }
+          .preview-image {
+              display: none;
+          }
+      }
+      @media (max-width: 430px) {
+          .preview-text {
+              flex-direction: column;
+              width: 100%;
+              font-size: 80%;
+          }
+          .shadow-image img {
+              width: 80%;
+              height: auto;
+              padding-right: 5%;
+          }
+          .text-spacing {
+              padding-top: 2%;
+          }
+          .preview-image {
+              display: none;
+          }
+      }
+      * {
+          margin: 0;
+      }
+      .preview-box {
+          background-color: #EBF3F5;
+          padding: 5% 8.33333333333% 5% 8.33333333333%;
+          align-items: center;
+      }
+      .preview-box, .preview-text, .shadow-box, .comment, .choose-service {
+          display: flex;
+      }
+      .shadow-box {
+          align-items: center;
+      }
+      .shadow-text {
+          color: #5C8692;
+          font-family: 'Manrope', sans-serif;
+      }
+      .headline {
+          font-family: 'Playfair Display', sans-serif;
+          line-height: 3em;
+      }
+      .comment {
+          color: #555555;
+          line-height: 3ch;
+          font-family: 'Manrope', sans-serif;
+      }
+      .choose-service button {
+          font-family: 'Manrope', sans-serif;
+          background-color: #5C8692;
+          color: #FFFFFF;
+          border: transparent;
+          margin: 0;
+          padding: 3% 9% 3% 9%;
+      }
+      .image-frame {
+          border: solid #5C8692 1ch;
+          max-width: 592px;
+          max-height: 645px;
+      }
+      .image-frame img {
+          position: relative;
+          right: 7%;
+          max-width: 550px;
+          max-height: 545px;
+      }
+  </style>
+  <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>inspire excellence</title>
+</head>
+<body>
+  <div class="preview-box">
+    <div class="preview-text">
+      <div class="shadow-box">
+        <div class="shadow-image">
+          <img alt="diamond" src="../../resources/diamond.png">
+        </div>
+        <div class="shadow-text">
+          ВДОХНОВЛЯЕМ НА СОВЕРШЕНСТВО
+        </div>
+      </div>
+      <div class="headline">
+        <h1>Подчеркните вашу уникальную красоту с ONE</h1>
+      </div>
+      <div class="comment text-spacing">
+        Ваше тело заслуживает заботы и ухода, и наши специалисты готовы помочь вам с этим.
+      </div>
+      <div class="choose-service text-spacing">
+        <button type="button">ВЫБРАТЬ УСЛУГУ</button>
+      </div>
+    </div>
+
+    <div class="preview-image">
+      <div class="image-frame">
+        <img alt="beauty" src="../../resources/preview.png">
+      </div>
+    </div>
+  </div>
+</body>
+</html>

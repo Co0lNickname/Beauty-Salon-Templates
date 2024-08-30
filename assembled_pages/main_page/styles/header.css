@@ -1,0 +1,156 @@
+@media (min-width: 768px) {
+    .contacts, .main-menu {
+        display: inherit;
+        flex-direction: row;
+        flex: 1 1 auto;
+    }
+    .contacts {
+        justify-content: space-between;
+        padding: 1%;
+    }
+    .menu-href {
+        width: 100%;
+    }
+    .personal-cabinet-page {
+        width: 50%;
+        margin: 1em;
+    }
+    .phone-item {
+        justify-content: center;
+    }
+    .brand-item img, .phone-png {
+        width: auto;
+        height: 2em;
+    }
+    .main-menu-selector {
+        display: none;
+    }
+}
+@media (min-width: 431px) and (max-width: 768px) {
+    .contacts, .main-menu {
+        display: inherit;
+        flex-direction: row;
+        flex: 1 1 auto;
+    }
+    .contacts {
+        justify-content: space-between;
+        padding: 1%;
+    }
+    .header-row {
+        display: flex;
+        flex-direction: column;
+    }
+    .personal-cabinet-page button {
+        margin: 0;
+        padding: 1%;
+    }
+    .personal-cabinet-page {
+        margin: 1%;
+        padding: 0;
+    }
+    .phone-item {
+        justify-content: flex-end;
+    }
+    .brand-item img, .phone-png {
+        width: auto;
+        height: 3ch;
+    }
+    .main-menu-selector {
+        display: none;
+    }
+}
+@media (max-width: 430px) {
+    .header-row {
+        justify-content: space-between;
+    }
+    .phone-item {
+        justify-content: space-between;
+    }
+    .main-menu {
+        display: none;
+    }
+    .main-menu-selector {
+        display: flex;
+    }
+    .brand-item img, .phone-png {
+        width: auto;
+        height: 3ch;
+    }
+    .phone-header {
+        font-size: 90%;
+    }
+}
+* {
+    margin: 0;
+}
+header {
+    background: #FFFFFF;
+}
+img {
+    align-self: center;
+}
+.header-row {
+    display: flex;
+    flex: 1;
+    width: 100%;
+}
+.brand-item {
+    display: inherit;
+}
+.phone-item {
+    display: inherit;
+    flex-direction: row;
+    flex: 1 1 auto;
+}
+.contacts {
+    display: inherit;
+}
+.main-menu {
+    flex: 1 1 auto;
+    justify-content: flex-end;
+}
+.menu-href {
+    display: inherit;
+    flex-direction: row;
+    flex: 1 1 auto;
+    justify-content: space-around;
+    padding: 1em;
+}
+.menu-href a, .menu-href a:active, .menu-href a:hover {
+    text-decoration: none;
+    color: #141414;
+}
+.phone-header, .phone-png, .main-page, .services-page, .experts-page, .personal-cabinet-page {
+    align-content: center;
+}
+.phone-header, .main-page, .experts-page, .services-page, .personal-cabinet-page button {
+    font-family: 'Manrope', sans-serif;
+}
+.personal-cabinet-page {
+    display: flex;
+    justify-content: center;
+    background-color: #1E2C30;
+}
+.personal-cabinet-page button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+    border-color: transparent;
+    color: #FFFFFF;
+    flex: 0 2 auto;
+    margin: 5%;
+}
+.main-menu-selector {
+    align-content: center;
+}
+.categories {
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+}
+.main-menu-selector button {
+    background-color: transparent;
+    border-color: transparent;
+    max-width: 50px;
+}

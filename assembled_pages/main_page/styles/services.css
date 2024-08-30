@@ -1,0 +1,88 @@
+@media (max-width: 1390px) {
+    .body-treatments-box, .manicure-pedicure-box, .hair-care-box {
+        width: 20em;
+    }
+    .service-name {
+        line-height: 3em;
+    }
+}
+@media (max-width: 1200px) {
+    .body-treatments-box, .manicure-pedicure-box, .hair-care-box {
+        width: 16em;
+    }
+    .service-name {
+        line-height: 3em;
+    }
+}
+@media (max-width: 940px) {
+    .body-treatments-box, .manicure-pedicure-box, .hair-care-box {
+        width: 12em;
+    }
+    .services-catalog {
+        font-size: 90%;
+    }
+    .service-name {
+        line-height: 2em;
+    }
+}
+@media (min-width: 768px) {
+    .services-catalog {
+        justify-content: space-between;
+    }
+    .body-treatments-box, .manicure-pedicure-box, .hair-care-box {
+        flex-direction: column;
+        max-width: 380px;
+    }
+}
+@media (min-width: 431px) and (max-width: 768px) {
+    .services-catalog {
+        align-items: center;
+    }
+    .services-catalog, .body-treatments-box, .manicure-pedicure-box, .hair-care-box {
+        flex-direction: column;
+    }
+    .body-treatments-box, .manicure-pedicure-box, .hair-care-box {
+        width: 18em;
+        padding-bottom: 5%;
+    }
+}
+@media (max-width: 430px) {
+    .services-catalog {
+        align-items: center;
+        font-size: 80%;
+    }
+    .services-catalog, .body-treatments-box, .manicure-pedicure-box, .hair-care-box {
+        flex-direction: column;
+    }
+    .body-treatments-box, .manicure-pedicure-box, .hair-care-box {
+        width: 14em;
+        padding-bottom: 5%;
+    }
+}
+* {
+    margin: 0;
+}
+.services-box {
+    background-color: #FFFFFF;
+    padding: 5% 8.33333333333% 5% 8.33333333333%;
+    align-items: center;
+}
+.services-box, .services-catalog, .body-treatments-box, .manicure-pedicure-box, .hair-care-box {
+    display: flex;
+}
+.services-catalog {
+    color: #141414;
+    width: 100%;
+}
+.service-image img {
+    width: 100%;
+    height: auto;
+}
+.service-name {
+    font-family: 'Playfair Display', sans-serif;
+}
+.service-desc {
+    color: #555555;
+    line-height: 3ch;
+    font-family: 'Manrope', sans-serif;
+}

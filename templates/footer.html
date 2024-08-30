@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+      @media (max-width: 1140px) {
+          .contact-us {
+              min-width: 250px;
+          }
+      }
+      @media (min-width: 768px) {
+          .brand-item img {
+              width: 100%;
+              height: auto;
+          }
+          .footer, .contact-us, .work-time {
+              flex-direction: column;
+          }
+          .logos {
+              flex-direction: row;
+              width: 100%;
+              justify-content: space-between;
+          }
+          .socials-item {
+              width: 25%;
+              min-width: 200px;
+              justify-content: space-between;
+          }
+          .social-box {
+              max-width: 55px;
+              max-height: 55px;
+          }
+          .information {
+              flex-direction: row;
+              justify-content: space-between;
+              padding-top: 4em;
+          }
+          .address, .email, .phone-header, .work-time p {
+              padding-top: 10%;
+          }
+      }
+      @media (min-width: 520px) and (max-width: 768px) {
+          .brand-item img {
+              width: 100%;
+              height: auto;
+          }
+          .footer, .contact-us, .work-time {
+              flex-direction: column;
+          }
+          .logos {
+              flex-direction: row;
+              width: 100%;
+              justify-content: space-between;
+          }
+          .brand-item {
+              max-width: 210px;
+          }
+          .information {
+              flex-direction: row;
+              justify-content: space-between;
+              padding-top: 2em;
+          }
+          .address, .email, .phone-header, .work-time p {
+              padding-top: 8%;
+          }
+          .socials-item {
+              width: 30%;
+              align-items: center;
+          }
+          .social-box {
+              max-width: 35px;
+              max-height: 35px;
+          }
+      }
+      @media (max-width: 520px) {
+          .brand-item img {
+              width: 100%;
+              height: auto;
+          }
+          .brand-item {
+              max-width: 200px;
+              width: 50%;
+              flex: 1 0 auto;
+          }
+          .footer, .contact-us, .work-time {
+              flex-direction: column;
+          }
+          .logos {
+              flex-direction: row;
+              width: 100%;
+              justify-content: space-between;
+          }
+          .information {
+              flex-direction: column;
+              justify-content: space-between;
+          }
+          .socials-item {
+              width: 30%;
+              align-items: center;
+          }
+          .social-box {
+              max-width: 24px;
+              max-height: 24px;
+          }
+          .information {
+              padding-top: 1em;
+              font-size: 80%;
+              width: 100%;
+          }
+          .contact-us {
+              border-bottom: solid rgba(100, 100, 100, 0.15) 2px;
+              padding-bottom: 1em;
+              margin-bottom: 1em;
+          }
+          .address, .email, .phone-header, .work-time p {
+              padding-top: 5%;
+          }
+      }
+      * {
+          margin: 0;
+      }
+      footer {
+          background-color: #1E2C30;
+          padding: 3% 8.33333333333% 5% 8.33333333333%;
+          color: #FFFFFF;
+      }
+      .footer, .logos, .socials-item, .brand-item, .social-box, .information, .contact-us, .work-time {
+          display: flex;
+      }
+      .logos {
+          border-bottom: solid rgba(100, 100, 100, 0.15) 2px;
+          padding-bottom: 2em;
+      }
+      .socials-item {
+          justify-content: space-between;
+      }
+      .social-box {
+          border: solid #5C8692;
+          justify-content: center;
+          align-items: center;
+          width: 4em;
+          height: 4em;
+      }
+      .social-box img {
+          max-width: 18px;
+          max-height: 18px;
+      }
+      .contact-us {
+          width: 25%;
+      }
+      .contact-us h3, .work-time h3 {
+          font-weight: normal;
+          font-family: 'Playfair Display', sans-serif;
+      }
+      .work-time p, .address, .email, .phone-header {
+          font-family: 'Manrope', sans-serif;
+          font-size: 85%;
+      }
+      .address, .email, .phone-header {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+      }
+      .phone-header {
+          width: 80%;
+      }
+  </style>
+  <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>footer template</title>
+</head>
+<body>
+  <footer>
+    <div class="footer">
+      <div class="logos">
+        <div class="brand-item">
+          <!-- scale ~25% -->
+          <img alt="brand" src="../resources/brand-bright.png">
+        </div>
+        <div class="socials-item">
+          <div class="tt-social social-box">
+            <img alt="tt" src="../resources/tt-logo.png">
+          </div>
+          <div class="inst-social social-box">
+            <img alt="inst" src="../resources/inst-logo.png">
+          </div>
+          <div class="tg-social social-box">
+            <img alt="tg" src="../resources/tg-logo.png">
+          </div>
+        </div>
+      </div>
+      <div class="information">
+        <div class="contact-us">
+          <h3>Связь С Нами</h3>
+          <div class="address">
+            <div>Адрес:</div>
+            <div>24A Kingston St, Los Vegas<br>NC 28202, USA.</div>
+          </div>
+          <div class="email">
+            <div>Почта:</div>
+            <div>beautysalonone@gmail.com</div>
+          </div>
+          <div class="phone">
+            <div>Телефон:</div>
+            <div>+7 (900) 456-78-90</div>
+          </div>
+        </div>
+        <div class="work-time">
+          <h3>Часы Работы</h3>
+          <p>Пн - Пт: 08:00 - 22:00</p>
+          <p>Сб: 09:00 - 21:00</p>
+          <p>Вс: 10:00 - 20:00</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

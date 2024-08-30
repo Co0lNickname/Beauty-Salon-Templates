@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+      @media (max-width: 1390px) {
+          .body-treatments-box, .manicure-pedicure-box, .hair-care-box {
+              width: 20em;
+          }
+          .service-name {
+              line-height: 3em;
+          }
+      }
+      @media (max-width: 1200px) {
+          .body-treatments-box, .manicure-pedicure-box, .hair-care-box {
+              width: 16em;
+          }
+          .service-name {
+              line-height: 3em;
+          }
+      }
+      @media (max-width: 940px) {
+          .body-treatments-box, .manicure-pedicure-box, .hair-care-box {
+              width: 12em;
+          }
+          .services-catalog {
+              font-size: 90%;
+          }
+          .service-name {
+              line-height: 2em;
+          }
+      }
+      @media (min-width: 768px) {
+          .services-catalog {
+              justify-content: space-between;
+          }
+          .body-treatments-box, .manicure-pedicure-box, .hair-care-box {
+              flex-direction: column;
+              max-width: 380px;
+          }
+      }
+      @media (min-width: 431px) and (max-width: 768px) {
+          .services-catalog {
+              align-items: center;
+          }
+          .services-catalog, .body-treatments-box, .manicure-pedicure-box, .hair-care-box {
+              flex-direction: column;
+          }
+          .body-treatments-box, .manicure-pedicure-box, .hair-care-box {
+              width: 18em;
+              padding-bottom: 5%;
+          }
+      }
+      @media (max-width: 430px) {
+          .services-catalog {
+              align-items: center;
+              font-size: 80%;
+          }
+          .services-catalog, .body-treatments-box, .manicure-pedicure-box, .hair-care-box {
+              flex-direction: column;
+          }
+          .body-treatments-box, .manicure-pedicure-box, .hair-care-box {
+              width: 14em;
+              padding-bottom: 5%;
+          }
+      }
+      * {
+          margin: 0;
+      }
+      .services-box {
+          background-color: #FFFFFF;
+          padding: 5% 8.33333333333% 5% 8.33333333333%;
+          align-items: center;
+      }
+      .services-box, .services-catalog, .body-treatments-box, .manicure-pedicure-box, .hair-care-box {
+          display: flex;
+      }
+      .services-catalog {
+          color: #141414;
+          width: 100%;
+      }
+      .service-image img {
+          width: 100%;
+          height: auto;
+      }
+      .service-name {
+          font-family: 'Playfair Display', sans-serif;
+      }
+      .service-desc {
+          color: #555555;
+          line-height: 3ch;
+          font-family: 'Manrope', sans-serif;
+      }
+  </style>
+  <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>services template</title>
+</head>
+<body>
+  <div class="services-box">
+    <div class="services-catalog">
+      <div class="body-treatments-box">
+        <div class="service-image">
+          <img alt="treatment" src="../../resources/treatment.png">
+        </div>
+        <div class="service-name">
+          <h3>Процедуры для лица и тела</h3>
+        </div>
+        <div class="service-desc">
+          Расслабьтесь и восстановите силы, сделайте акцент на своих уникальных чертах.
+        </div>
+      </div>
+
+      <div class="manicure-pedicure-box">
+        <div class="service-image">
+          <img alt="manicure and pedicure" src="../../resources/manicure_pedicure.png">
+        </div>
+        <div class="service-name">
+          <h3>Маникюр&Педикюр</h3>
+        </div>
+        <div class="service-desc">
+          Высококачественные услуги, которые превратят ваши ногти в настоящее произведение искусства.
+        </div>
+      </div>
+
+      <div class="hair-care-box">
+        <div class="service-image">
+          <img alt="hair care" src="../../resources/hair_care.png">
+        </div>
+        <div class="service-name">
+          <h3>Уход за волосами</h3>
+        </div>
+        <div class="service-desc">
+          Профессиональный уход за волосами, который подчеркнет вашу природную красоту и стиль.
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+      @media (min-width: 768px) {
+          .catalog-box {
+              justify-content: space-between;
+          }
+          .master-box {
+              width: 29.351184346%;
+          }
+          .master-name {
+              margin-top: 5%;
+          }
+          .master-name {
+              font-size: 135%;
+          }
+          .work-experience, .master-description {
+              margin-top: 3%;
+              font-size: 90%;
+          }
+      }
+      @media (min-width: 431px) and (max-width: 768px) {
+          .catalog-box {
+              flex-direction: column;
+              align-items: center;
+          }
+          .master-box {
+              width: 283px;
+              margin-bottom: 5%;
+          }
+          .master-name {
+              font-size: 135%;
+          }
+          .master-name, .master-description {
+              margin-top: 2%;
+          }
+          .work-experience {
+              margin-top: 1%;
+          }
+      }
+      @media (max-width: 430px) {
+          .catalog-box {
+              flex-direction: column;
+              align-items: center;
+          }
+          .master-box {
+              width: 220px;
+              margin-bottom: 5%;
+          }
+          .master-name {
+              font-size: 110%;
+          }
+          .master-name {
+              margin-top: 2%;
+          }
+          .work-experience, .master-description {
+              font-size: 90%;
+              margin-top: 1%;
+          }
+      }
+      * {
+          margin: 0;
+      }
+      .masters-block {
+          align-items: center;
+          padding: 2% 16.2847222222% 2% 16.2847222222%;
+          background-color: #EBF3F5;
+      }
+      .catalog-box {
+          width: 100%;
+      }
+      .master-image img {
+          width: 100%;
+          height: auto;
+      }
+      .masters-block, .catalog-box, .master-box {
+          display: flex;
+      }
+      .master-box {
+          flex-direction: column;
+      }
+      .master-name {
+          font-family: 'Playfair Display', sans-serif;
+      }
+      .work-experience, .master-description {
+          color: #555555;
+          font-family: 'Manrope', sans-serif;
+      }
+  </style>
+  <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>Services</title>
+</head>
+<body>
+<section class="masters-block">
+  <div class="catalog-box">
+    <div class="master-box">
+      <div class="master-image">
+        <img alt="master.png" src="../../resources/hair_care.png">
+      </div>
+      <div class="master-name">
+        Галина, 40
+      </div>
+      <div class="work-experience">
+        Стаж - 6 лет
+      </div>
+      <div class="master-description">
+        Описание бла-бла
+      </div>
+    </div>
+
+    <div class="master-box">
+      <div class="master-image">
+        <img alt="master.png" src="../../resources/hair_care.png">
+      </div>
+      <div class="master-name">
+        Галина, 40
+      </div>
+      <div class="work-experience">
+        Стаж - 6 лет
+      </div>
+      <div class="master-description">
+        Описание бла-бла
+      </div>
+    </div>
+
+    <div class="master-box">
+      <div class="master-image">
+        <img alt="master.png" src="../../resources/hair_care.png">
+      </div>
+      <div class="master-name">
+        Галина, 40
+      </div>
+      <div class="work-experience">
+        Стаж - 6 лет
+      </div>
+      <div class="master-description">
+        Описание бла-бла
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>

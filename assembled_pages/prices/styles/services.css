@@ -1,0 +1,98 @@
+@media (min-width: 768px) {
+    .catalog-box {
+        justify-content: space-between;
+    }
+    .service-box {
+        width: 29.351184346%;
+    }
+    .service-title, .choose-service {
+        margin-top: 5%;
+    }
+    .service-title {
+        font-size: 135%;
+    }
+    .service-price {
+        margin-top: 3%;
+    }
+}
+@media (min-width: 431px) and (max-width: 768px) {
+    .catalog-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .service-box {
+        width: 283px;
+        margin-bottom: 5%;
+    }
+    .service-title {
+        font-size: 135%;
+    }
+    .service-title, .choose-service {
+        margin-top: 2%;
+    }
+    .service-price {
+        margin-top: 1%;
+    }
+}
+@media (max-width: 430px) {
+    .catalog-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .service-box {
+        width: 220px;
+        margin-bottom: 5%;
+    }
+    .service-title {
+        font-size: 110%;
+    }
+    .service-title, .choose-service {
+        margin-top: 2%;
+    }
+    .service-price {
+        font-size: 90%;
+        margin-top: 1%;
+    }
+    .choose-service {
+        font-size: 70%;
+    }
+}
+* {
+    margin: 0;
+}
+.services-block {
+    align-items: center;
+    padding: 2% 16.2847222222% 2% 16.2847222222%;
+    background-color: #EBF3F5;
+}
+.catalog-box {
+    width: 100%;
+}
+.service-image img {
+    width: 100%;
+    height: auto;
+}
+.services-block, .catalog-box, .service-box {
+    display: flex;
+}
+.service-box {
+    flex-direction: column;
+}
+.service-title {
+    font-family: 'Playfair Display', sans-serif;
+}
+.service-price {
+    color: #555555;
+    font-family: 'Manrope', sans-serif;
+}
+.choose-service {
+    height: 3em;
+    font-family: 'Manrope', sans-serif;
+}
+.choose-service button {
+    width: 100%;
+    height: 100%;
+    background-color: #5C8692;
+    border: transparent;
+    color: #FFFFFF;
+}

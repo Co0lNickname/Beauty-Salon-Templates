@@ -1,0 +1,161 @@
+@media (max-width: 1140px) {
+    .contact-us {
+        min-width: 250px;
+    }
+}
+@media (min-width: 768px) {
+    .brand-item img {
+        width: 100%;
+        height: auto;
+    }
+    .footer, .contact-us, .work-time {
+        flex-direction: column;
+    }
+    .logos {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .socials-item {
+        width: 25%;
+        min-width: 200px;
+        justify-content: space-between;
+    }
+    .social-box {
+        max-width: 55px;
+        max-height: 55px;
+    }
+    .information {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 4em;
+    }
+    .address, .email, .phone, .work-time p {
+        padding-top: 10%;
+    }
+}
+@media (min-width: 520px) and (max-width: 768px) {
+    .brand-item img {
+        width: 100%;
+        height: auto;
+    }
+    .footer, .contact-us, .work-time {
+        flex-direction: column;
+    }
+    .logos {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .brand-item {
+        max-width: 210px;
+    }
+    .information {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 2em;
+    }
+    .address, .email, .phone, .work-time p {
+        padding-top: 8%;
+    }
+    .socials-item {
+        width: 30%;
+        align-items: center;
+    }
+    .social-box {
+        max-width: 35px;
+        max-height: 35px;
+    }
+}
+@media (max-width: 520px) {
+    .brand-item img {
+        width: 100%;
+        height: auto;
+    }
+    .brand-item {
+        max-width: 200px;
+        width: 50%;
+        flex: 1 0 auto;
+    }
+    .footer, .contact-us, .work-time {
+        flex-direction: column;
+    }
+    .logos {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .information {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .socials-item {
+        width: 30%;
+        align-items: center;
+    }
+    .social-box {
+        max-width: 24px;
+        max-height: 24px;
+    }
+    .information {
+        padding-top: 1em;
+        font-size: 80%;
+        width: 100%;
+    }
+    .contact-us {
+        border-bottom: solid rgba(100, 100, 100, 0.15) 2px;
+        padding-bottom: 1em;
+        margin-bottom: 1em;
+    }
+    .address, .email, .phone, .work-time p {
+        padding-top: 5%;
+    }
+}
+* {
+    margin: 0;
+}
+footer {
+    background-color: #1E2C30;
+    padding: 3% 8.33333333333% 5% 8.33333333333%;
+    color: #FFFFFF;
+}
+.footer, .logos, .socials-item, .brand-item, .social-box, .information, .contact-us, .work-time {
+    display: flex;
+}
+.logos {
+    border-bottom: solid rgba(100, 100, 100, 0.15) 2px;
+    padding-bottom: 2em;
+}
+.socials-item {
+    justify-content: space-between;
+}
+.social-box {
+    border: solid #5C8692;
+    justify-content: center;
+    align-items: center;
+    width: 4em;
+    height: 4em;
+}
+.social-box img {
+    max-width: 18px;
+    max-height: 18px;
+}
+.contact-us {
+    width: 25%;
+}
+.contact-us h3, .work-time h3 {
+    font-weight: normal;
+    font-family: 'Playfair Display', sans-serif;
+}
+.work-time p, .address, .email, .phone {
+    font-family: 'Manrope', sans-serif;
+    font-size: 85%;
+}
+.address, .email, .phone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.phone {
+    width: 80%;
+}
