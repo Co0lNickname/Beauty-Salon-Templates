@@ -81,9 +81,19 @@
               flex-direction: column;
           }
           .menu-select-block {
-              position: absolute;
-              top: 5vh;
-              right: 4vw;
+              min-width: 90px;
+              background-color: #1E2C30;
+              border-radius: 16px;
+              line-height: 2em;
+          }
+          .menu-item {
+              padding: 1ch;
+          }
+          .menu-item button {
+              color: #FFFFFF;
+          }
+          .personal-cabinet-item {
+
           }
           .brand-item img, .phone-png {
               width: auto;
@@ -129,7 +139,12 @@
           justify-content: space-around;
           padding: 1em;
       }
-      .phone-header, .phone-png, .main-page, .services-page, .experts-page, .personal-cabinet-page {
+      .phone-header,
+      .phone-png,
+      .main-page,
+      .services-page,
+      .experts-page,
+      .personal-cabinet-page {
           align-content: center;
       }
       .phone-header,
@@ -167,6 +182,18 @@
           background-color: transparent;
           border-color: transparent;
           max-width: 50px;
+          align-self: flex-end;
+      }
+
+      @keyframes expand-menu-box {
+          from {
+              width: 0;
+              height: 0;
+          }
+          to {
+              width: 100%;
+              height: 100%;
+          }
       }
   </style>
   <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
@@ -188,7 +215,7 @@
         </div>
       </div>
       <div class="main-menu-selector">
-        <button type="button">
+        <button type="button" onclick="expandMenuBox()">
           <img class="categories" alt="categories" src="../resources/categories1.png">
         </button>
 
@@ -208,7 +235,7 @@
               Мастера
             </button>
           </div>
-          <div class="menu-item">
+          <div class="menu-item personal-cabinet-item">
             <button class="menu-item-button">
               Личный Кабинет
             </button>
@@ -235,3 +262,13 @@
   </header>
 </body>
 </html>
+
+<script>
+  const menu_selector = document.querySelector('div.menu-select-block')
+
+  const expandMenuBox = () => {
+    menu_selector.style.animationName = 'expand-menu-block';
+    menu_selector.style.animationDuration = '5s';
+    menu_selector.style.animationIterationCount = '1';
+  }
+</script>
