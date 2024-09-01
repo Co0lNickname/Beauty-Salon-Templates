@@ -70,11 +70,20 @@
           .phone-item {
               justify-content: space-between;
           }
+          .contacts {
+              align-items: flex-start;
+          }
           .main-menu {
               display: none;
           }
           .main-menu-selector {
               display: flex;
+              flex-direction: column;
+          }
+          .menu-select-block {
+              position: absolute;
+              top: 5vh;
+              right: 4vw;
           }
           .brand-item img, .phone-png {
               width: auto;
@@ -123,7 +132,12 @@
       .phone-header, .phone-png, .main-page, .services-page, .experts-page, .personal-cabinet-page {
           align-content: center;
       }
-      .phone-header, .main-page, .experts-page, .services-page, .personal-cabinet-page button {
+      .phone-header,
+      .main-page,
+      .experts-page,
+      .services-page,
+      .personal-cabinet-page button,
+      .menu-item {
           font-family: 'Manrope', sans-serif;
       }
       .personal-cabinet-page {
@@ -174,7 +188,32 @@
         </div>
       </div>
       <div class="main-menu-selector">
-        <button type="button"><img class="categories" alt="categories" src="../resources/categories1.png"></button>
+        <button type="button">
+          <img class="categories" alt="categories" src="../resources/categories1.png">
+        </button>
+
+        <div class="menu-select-block">
+          <div class="menu-item">
+            <button class="menu-item-button select-main-page">
+              Главная
+            </button>
+          </div>
+          <div class="menu-item">
+            <button class="menu-item-button select-services-page">
+              Услуги
+            </button>
+          </div>
+          <div class="menu-item">
+            <button class="menu-item-button select-experts-page">
+              Мастера
+            </button>
+          </div>
+          <div class="menu-item">
+            <button class="menu-item-button">
+              Личный Кабинет
+            </button>
+          </div>
+        </div>
       </div>
       <div class="main-menu">
         <div class="menu-href">
