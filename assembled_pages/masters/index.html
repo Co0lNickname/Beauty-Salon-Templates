@@ -10,6 +10,7 @@
   <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
   <script defer src="../main_page/scripts/scroll_animation.js"></script>
+  <script defer src="./../main_page/scripts/dropdown_menu.js"></script>
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
   <meta charset="UTF-8">
   <style>
@@ -32,15 +33,40 @@
         </div>
       </div>
       <div class="main-menu-selector">
-        <button type="button"><img class="categories" alt="categories" src="../../resources/categories1.png"></button>
+        <button class="menu-expand-button" type="button" aria-expanded="false" aria-controls="list">
+          <img class="categories" alt="categories" src="../../resources/categories1.png">
+        </button>
+
+        <ul class="menu-select-block" id="list" aria-hidden="true">
+          <li class="menu-item">
+            <button class="menu-item-button select-main-page" tabindex="-1">
+              Главная
+            </button>
+          </li>
+          <li class="menu-item">
+            <button class="menu-item-button select-services-page" tabindex="-1">
+              Услуги
+            </button>
+          </li>
+          <li class="menu-item">
+            <button class="menu-item-button select-experts-page" tabindex="-1">
+              Мастера
+            </button>
+          </li>
+          <li class="menu-item personal-cabinet-item">
+            <button class="menu-item-button" tabindex="-1">
+              Личный Кабинет
+            </button>
+          </li>
+        </ul>
       </div>
       <div class="main-menu">
         <div class="menu-href">
           <div class="main-page">
-            <a href="../main_page/index.html">Главная</a>
+            <a>Главная</a>
           </div>
           <div class="services-page">
-            <a href="../prices/index.html">Услуги</a>
+            <a>Услуги</a>
           </div>
           <div class="experts-page">
             <a>Мастера</a>
