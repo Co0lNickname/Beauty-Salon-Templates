@@ -81,16 +81,30 @@
               flex-direction: column;
           }
           .menu-select-block {
+              border-radius: 16px;
+              overflow: hidden;
+              padding-inline-start: 0;
+              line-height: 0;
+              color: transparent;
+              transition: line-height 1s, color 1s;
+          }
+          .menu-expand-button.active ~ .menu-select-block {
               min-width: 90px;
               background-color: #1E2C30;
-              border-radius: 16px;
               line-height: 2em;
           }
           .menu-item {
-              padding: 1ch;
+              overflow: hidden;
           }
           .menu-item button {
               color: #FFFFFF;
+              padding-left: 1em;
+              min-width: 90px;
+          }
+          .menu-item button:hover,
+          .menu-item button:active {
+              color: #1E2C30;
+              background-color: #FFFFFF;
           }
           .personal-cabinet-item {
 
@@ -184,17 +198,6 @@
           max-width: 50px;
           align-self: flex-end;
       }
-
-      @keyframes expand-menu-box {
-          from {
-              width: 0;
-              height: 0;
-          }
-          to {
-              width: 100%;
-              height: 100%;
-          }
-      }
   </style>
   <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
@@ -215,32 +218,32 @@
         </div>
       </div>
       <div class="main-menu-selector">
-        <button type="button" onclick="expandMenuBox()">
+        <button class="menu-expand-button" type="button" aria-expanded="false" aria-controls="list">
           <img class="categories" alt="categories" src="../resources/categories1.png">
         </button>
 
-        <div class="menu-select-block">
-          <div class="menu-item">
-            <button class="menu-item-button select-main-page">
+        <ul class="menu-select-block" id="list" aria-hidden="true">
+          <li class="menu-item">
+            <button class="menu-item-button select-main-page" tabindex="-1">
               Главная
             </button>
-          </div>
-          <div class="menu-item">
-            <button class="menu-item-button select-services-page">
+          </li>
+          <li class="menu-item">
+            <button class="menu-item-button select-services-page" tabindex="-1">
               Услуги
             </button>
-          </div>
-          <div class="menu-item">
-            <button class="menu-item-button select-experts-page">
+          </li>
+          <li class="menu-item">
+            <button class="menu-item-button select-experts-page" tabindex="-1">
               Мастера
             </button>
-          </div>
-          <div class="menu-item personal-cabinet-item">
-            <button class="menu-item-button">
+          </li>
+          <li class="menu-item personal-cabinet-item">
+            <button class="menu-item-button" tabindex="-1">
               Личный Кабинет
             </button>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
       <div class="main-menu">
         <div class="menu-href">
@@ -264,11 +267,42 @@
 </html>
 
 <script>
-  const menu_selector = document.querySelector('div.menu-select-block')
+  const menuSelector = document.querySelector('div.menu-select-block');
+  const menuExpandButton = document.querySelector('button.menu-expand-button');
+  const menuItemsButtons = document.querySelector('button.menu-item-button');
+
+  /* Здесь начало готового решения */
+  menuExpandButton.addEventListener('click', (e) => {
+      menuExpandButton.classList.toggle('active')
+
+      if (menuExpandButton.classList.contains('active')) {
+          menuExpandButton.setAttribute('aria-expanded', 'true')
+          menuSelector.setAttribute('aria-hidden', 'false')
+          menuItemsButtons.forEach(link => link.setAttribute('tabindex', '0'))
+      } else {
+          menuExpandButton.setAttribute('aria-expanded', 'false')
+          menuSelector.setAttribute('aria-hidden', 'true')
+          menuItemsButtons.forEach(link => link.setAttribute('tabindex', '-1'))
+      }
+  })
+  /* Здесь конец готового решения */
+
+  let isRotated = false;
+  const rotateCategoriesButton = () => {
+    if (!isRotated) {
+        menuExpandButton.style.backgroundColor = 'black;'
+        console.log(`rotated!, ${menuExpandButton}`)
+        isRotated = true;
+    } else {
+        menuExpandButton.style.transform = 'rotate(-90deg);'
+        console.log(`inverse rotated!, ${menuExpandButton}`)
+        isRotated = false;
+    }
+  }
+
+  menuExpandButton.addEventListener('click', rotateCategoriesButton)
 
   const expandMenuBox = () => {
-    menu_selector.style.animationName = 'expand-menu-block';
-    menu_selector.style.animationDuration = '5s';
-    menu_selector.style.animationIterationCount = '1';
+    menuSelector.style.transform = 'translate(0, 50%)';
   }
 </script>
